@@ -1,5 +1,4 @@
-![main](https://github.com/LosEvons/suber-sudoku/workflows/CI/badge.svg?branch=main)
-![stable](https://github.com/LosEvons/suber-sudoku/workflows/CI/badge.svg?branch=stable)
+![Workflow](https://github.com/LosEvons/suber-sudoku/workflows/CI/badge.svg)
 
 
 # suber-sudoku
