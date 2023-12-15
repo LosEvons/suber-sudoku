@@ -1,5 +1,5 @@
 """suber/main.py"""
-from UI.app import SudokuApp
+from ui.app import SudokuApp
 
 def main() -> None:
     """The main function and entry point of the program."""
