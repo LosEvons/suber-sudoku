@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "suber-sudoku"
+version = "0.1.0"
+description = "A sudoku video game."
+license="Apache 2.0"
+authors = ["Emil Malk <emil.malk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+invoke = "^2.2.0"
+textual = "^0.45.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^3.0.2"
+coverage = "^7.3.2"
+pytest = "^7.4.3"
+mypy = "^1.7.1"
+lxml = "^4.9.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
