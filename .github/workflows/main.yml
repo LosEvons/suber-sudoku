@@ -20,9 +20,9 @@ jobs:
             - name: Install dependencies
               run: poetry install
             - name: Run pylint
-              run: poetry run pylint src
+              run: poetry run pylint app
             - name: Run typecheck
-              run: poetry run mypy src
+              run: poetry run mypy app
             - name: Run unit tests
               run: poetry run coverage run --branch -m pytest
             - name: Coverage report
