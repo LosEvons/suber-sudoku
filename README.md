@@ -1,5 +1,5 @@
 <p align="center">
-    ![main](https://github.com/LosEvons/suber-sudoku/workflows/main CI/badge.svg)
+    ![Workflow](https://github.com/LosEvons/suber-sudoku/workflows/CI/badge.svg)
 </p>
 
 # suber-sudoku
