@@ -1,4 +1,4 @@
-"""suber/UI/app.py"""
+"""suber/ui/app.py"""
 
 from utils.constants import ROOT_DIR
 from textual.app import App, ComposeResult
