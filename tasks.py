@@ -7,9 +7,9 @@ from invoke.tasks import task
 @task
 def run(ctx):
     if sys.platform.startswith("win"):
-        ctx.run("python src/main.py")
+        ctx.run("python app/main.py")
     else:
-        ctx.run("python3 src/main.py")
+        ctx.run("python3 app/main.py")
 
 @task
 def unittest(ctx):
@@ -25,15 +25,15 @@ def coverage_report(ctx):
 
 @task
 def lint(ctx):
-    ctx.run("pylint src", warn = True)
+    ctx.run("pylint app", warn = True)
 
 @task
 def typecheck(ctx):
-    ctx.run("mypy src --html-report ./docs/mypy")
+    ctx.run("mypy app --html-report ./docs/mypy")
 
 @task
 def report(ctx):
-    ctx.run("pylint src", warn = True)
-    ctx.run("mypy src --html-report ./docs/mypy")
-    ctx.run("pytest ./tests/unit")
+    ctx.run("pylint app", warn = True)
+    ctx.run("mypy app --html-report ./docs/mypy")
+    ctx.run("coverage run --branch -m pytest ./tests/unit")
     ctx.run("coverage html -d ./docs/coverage")
