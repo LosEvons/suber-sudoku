@@ -2,7 +2,7 @@
 
 from utils.constants import ROOT_DIR
 from textual.app import App, ComposeResult
-from textual.containers import ScrollableContainer
+from textual.containers import Container
 from textual.widgets import Header, Footer, Button, Static
 
 class SudokuApp(App):
@@ -31,11 +31,11 @@ class SudokuCell(Static):
     """A widget to display a single sudoku grid cell."""
 
     def compose(self) -> ComposeResult:
-        yield Button("Cell", id="cell", variant="success")
+        yield Button("Cell", classes="sudoku-cell", variant="success")
 
 class SudokuGrid(Static):
     """A widget to display a sudoku grid"""
     def compose(self) -> ComposeResult:
-        yield ScrollableContainer(SudokuCell(), SudokuCell(), SudokuCell())
-        yield ScrollableContainer(SudokuCell(), SudokuCell(), SudokuCell())
-        yield ScrollableContainer(SudokuCell(), SudokuCell(), SudokuCell())
+        yield Container(SudokuCell(), SudokuCell(), SudokuCell())
+        yield Container(SudokuCell(), SudokuCell(), SudokuCell())
+        yield Container(SudokuCell(), SudokuCell(), SudokuCell())
