@@ -1,6 +1,4 @@
-<p align="center">
-    ![Workflow](https://github.com/LosEvons/suber-sudoku/workflows/CI/badge.svg)
-</p>
+![Workflow](https://github.com/LosEvons/suber-sudoku/workflows/CI/badge.svg)
 
 # suber-sudoku
 A sudoku game programmed in Python as an exercise on writing good, maintainable and understandable code.
