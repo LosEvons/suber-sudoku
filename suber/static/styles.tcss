@@ -1,0 +1,24 @@
+SudokuCell {
+    width: 10;
+    height: 10;
+    margin: 1;
+    padding: 1;
+}
+
+ScrollableContainer {
+    layout: horizontal;
+}
+
+SudokuGrid {
+    content-align: center middle;
+}
+
+Button {
+    width: 10;
+    height: 10;
+}
+
+#cell {
+    width: 10;
+    height: 10;
+}

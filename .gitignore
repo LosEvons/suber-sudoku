@@ -161,4 +161,7 @@ cython_debug/
 
 # Ignore certain docs
 docs/mypy
+docs/coverage
 
+# Ignore vscode workspace
+suber-sudoku.code-workspace

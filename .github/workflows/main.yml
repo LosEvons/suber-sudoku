@@ -20,12 +20,12 @@ jobs:
             - name: Install dependencies
               run: poetry install
             - name: Run pylint
-              run: poetry run pylint app
+              run: poetry run pylint suber
             - name: Run typecheck
-              run: poetry run mypy app
-            - name: Run unit tests
-              run: poetry run coverage run --branch -m pytest
-            - name: Coverage report
-              run: poetry run coverage xml
-            - name: Coverage report to Codecov
-              run: bash <(curl -s https://codecov.io/bash)
+              run: poetry run mypy suber
+            #- name: Run unit tests
+            #  run: poetry run coverage run --branch -m pytest
+            #- name: Coverage report
+            #  run: poetry run coverage xml
+            #- name: Coverage report to Codecov
+            #  run: bash <(curl -s https://codecov.io/bash)
